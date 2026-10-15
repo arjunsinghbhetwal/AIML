@@ -1,0 +1,374 @@
+/* Body */
+
+body{
+    background-color:#fafbfc;
+    color:white;
+    font-family:'Orbitron', sans-serif;
+    margin:0;
+    padding:40px
+}
+
+/* Navigation Bar */
+
+.navbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 40px;
+
+    background-color:#ad09ee;
+
+    border-bottom:2px solid #000000;
+
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius:15px;
+}
+
+.logo{
+    font-size:32px;
+
+    font-weight:bold;
+
+    color:hsl(0, 0%, 0%);
+}
+
+.nav-links{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:30px;
+
+    margin:0;
+
+    padding:5px;
+}
+
+.nav-links a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:18px;
+
+    transition:.3s;
+}
+
+.nav-links a:hover{
+
+    color:#00ffff;
+}
+
+/* ------------------- */
+/* ---HERO SECTION---- */
+/* ------------------- */
+.hero{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:80px 100px;
+    min-height:80vh;
+    background:#0b0b14;
+    margin-top:12px;
+    border-radius:20px;
+}
+
+.hero-content{
+    width:50%;
+}
+
+.hero-tag{
+    color:#69a7ff;
+    font-size:24px;
+    font-weight:bold;
+    letter-spacing:3px;
+    margin-bottom:20px;
+}
+
+.hero-title{
+    font-family:"Bebas Neue", sans-serif;
+    font-size:110px;
+    line-height:0.9;
+    color:white;
+    margin:0;
+    
+}
+
+.hero-description{
+    color:#d7d7d7;
+    font-size:26px;
+    margin:30px;
+    justify-content:center;
+}
+
+.hero-btn{
+    padding:18px 45px;
+    border:none;
+    border-radius:50px;
+    font-size:22px;
+    font-weight:bold;
+    /* color:white; */
+    cursor:pointer;
+    background:linear-gradient(90deg,#8b3dff,#4dc4ff);
+    transition:.3s;
+}
+
+.hero-btn:hover{
+    transform:scale(1.05);
+}
+
+.hero-image{
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+.hero-image img{
+    width:100%;
+    transition:.5s;
+}
+
+.hero-image img:hover{
+    transform:rotate(-3deg) scale(1.03);
+}
+
+.categories{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+}
+
+.category-card{
+    text-align:center;
+}
+
+/* ------------------ */
+/* --Top Categories-- */
+/* ------------------ */
+.product-card{
+    width:600px;
+    height:600px;
+    position:relative;
+    overflow:hidden;
+    border-radius:20px;
+    cursor:pointer;
+}
+
+.product-card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+    transition:transform 0.6s ease;
+}
+
+.product-card img:hover{
+    transform:scale(1.08);
+}
+
+.overlay-text{
+    position:absolute;
+    bottom:20px;
+    left:50%;
+    transform:translateX(-50%);
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    /* z-index:10; */
+    padding:0px;
+}
+/* --------------------- */
+/* --------------------- */
+/* --------------------- */
+
+
+
+
+/* --------------------- */
+/* ------TOP DEALS------ */
+/* --------------------- */
+
+/* Product Container */
+.product-container{
+    padding:10px;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,350px);
+
+    justify-content:center;
+
+    gap:10px;
+
+    justify-items:center;
+}
+
+.product-container img{
+    width:350px;
+    height:350px;
+    border-radius:20px;
+    position:relative;
+    overflow:hideen;
+    transition:transform 0.6s ease;
+}
+
+.product-container img:hover{
+    transform:scale(1.08);
+}
+
+.deal-card{
+    display:flex;
+    width:350px;
+    overflow:hidden;
+    border-radius:20px;
+    background:#ffffff;
+    transition:.4s;
+    box-shadow:0 10px 20px rgba(0,0,0,.12);
+    flex-direction:column;
+}
+
+.deal-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 35px rgba(0,0,0,.2);
+}
+
+.deal-card img{
+    width:100%;
+    display:flex;
+}
+
+.deal-info{
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    flex:1;
+    padding:20px;
+}
+
+.deal-info h5{
+    color:Black;
+    font-size:16px;
+    margin:0;
+    padding:10px;
+    font-family: 'Oxanium', sans-serif;                                                                                                              
+}
+
+.deal-info p{
+    display:flex;
+    color:#cc18f0;
+    font-size:18px;
+    margin-top:auto;
+    padding:10px;
+    font-weight:bold;
+}
+
+.deal-info button{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:#9b27ff;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+    margin-top:auto;                                                                                                              
+}
+
+.top-deals{
+    width:1460px;
+    font-size:18px;
+    margin:0;
+    margin-bottom:15px;
+}
+
+.top-deals h5{
+    color:#000;
+    font-size:50;
+    text-align:left;
+    margin-bottom:0px;
+    margin:0;
+}
+
+.top-deals p{
+    color:Black;
+    text-align:left;
+    text-transform:uppercase;
+    font-weight:bold;
+    font-size:16px;
+    letter-spacing:2px;
+    margin:0 0 8px 0;
+    padding:50px;
+}
+
+.deal-info buton:hover{
+    background:#6e00ff;
+}
+
+/* --------------------- */
+/* --------------------- */
+/* --------------------- */
+
+/* Main Heading */
+
+h1{
+    color:#000000;
+    text-align:center;
+    font-size:22px;
+    margin-bottom:30px;
+    font-family:"Bebas Neue", sans-serif;
+}
+
+/* Section Headings */
+h2{
+    color:#000000;
+    text-align:center;
+    font-size:35px;
+}
+h5{
+    color:#000000;
+    text-align:left;
+    margin-top:40px;
+    font-size:40px;
+    padding:10px;
+}
+
+h6{
+    color:#000000;
+    font-size:20px;
+    font-weight:bold;
+}
+
+
+/* Links */
+a{ 
+    display:block;
+    color:#9e9090;
+    text-decoration:none;
+    margin:8px 0;
+    font-size:15px;
+    transition:0.3s;
+    font-weight:bold;
+}
+ 
+a:hover{
+    color:#1c0eeb;
+    padding-left:5px;
+}
+
+/* Optional Horizontal line */
+hr{ 
+    border:none;
+    height:2px;
+    background:#00ffff;
+    margin:15px 0;
+}
